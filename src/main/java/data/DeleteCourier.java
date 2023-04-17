@@ -5,10 +5,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
-public class OrderCreds {
-    private int track;
+@NoArgsConstructor
+public class DeleteCourier {
+    private String id;
 }

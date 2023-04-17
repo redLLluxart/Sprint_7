@@ -1,4 +1,6 @@
 import data.Orders;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import order.OrderClient;
 import org.apache.http.HttpStatus;
@@ -45,6 +47,8 @@ public class CreateOrderTests {
     }
 
     @Test
+    @DisplayName("Create order")
+    @Description("Проверка возможности создания заказа c выбором цвета")
     public void CreateOrderTest(){
 
         orders = randomOrder();

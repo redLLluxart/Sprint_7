@@ -2,8 +2,6 @@ package utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 public class Utils {

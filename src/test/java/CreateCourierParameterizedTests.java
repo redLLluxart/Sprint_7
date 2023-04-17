@@ -1,5 +1,7 @@
 import courier.CourierClient;
 import data.Courier;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.After;
@@ -43,6 +45,8 @@ public class CreateCourierParameterizedTests {
     }
 
     @Test
+    @DisplayName("Create courier negative data")
+    @Description("Создание курьера без необходимых данных в запросе")
     public void CreateCourierNegativeDataTest(){
 
         courier = new Courier(login,password,firstName);

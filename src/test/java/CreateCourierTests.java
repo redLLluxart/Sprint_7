@@ -1,5 +1,7 @@
 import courier.CourierClient;
 import data.Courier;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.After;
@@ -23,6 +25,8 @@ public class CreateCourierTests {
     }
 
     @Test
+    @DisplayName("Create courier")
+    @Description("Проверка возможности создания курьера")
     public void CourierCreateTest(){
 
         ValidatableResponse response = courierClient.create(courier);
@@ -36,6 +40,8 @@ public class CreateCourierTests {
     }
 
     @Test
+    @DisplayName("Create two same courier")
+    @Description("Проверка возмоожности создания двух одинаковых курьеров")
     public void TwoSameCourierCreateTest(){
 
         ValidatableResponse responseFirst = courierClient.create(courier);
